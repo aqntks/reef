@@ -10,7 +10,7 @@ import importlib
 import cv2 
 
 from shutil import copyfile
-from tqdm.notebook import tqdm
+from tqdm import tqdm
 tqdm.pandas()
 from sklearn.model_selection import GroupKFold
 from PIL import Image
