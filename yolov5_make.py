@@ -30,8 +30,8 @@ rc('animation', html='jshtml')
 FOLD      = 4 # which fold to train
 REMOVE_NOBBOX = True # remove images with no bbox
 ROOT_DIR  = './'
-IMAGE_DIR = './yolo_img/images' # directory to save images
-LABEL_DIR = './yolo_img/labels' # directory to save labels
+IMAGE_DIR = './train_data/images' # directory to save images
+LABEL_DIR = './train_data/labels' # directory to save labels
 
 ## create directories ##
 
@@ -404,7 +404,7 @@ len(train_files), len(val_files)
 
 import yaml
 
-cwd = './'
+cwd = './train_data'
 
 with open(os.path.join(cwd, 'train.txt'), 'w') as f:
     for path in train_df.image_path.tolist():
@@ -415,7 +415,7 @@ with open(os.path.join(cwd, 'val.txt'), 'w') as f:
         f.write(path + '\n')
 
 data = dict(
-    path='./',
+    path='./train_data',
     train=os.path.join(cwd, 'train.txt'),
     val=os.path.join(cwd, 'val.txt'),
     nc=1,
