@@ -38,32 +38,14 @@ n 19
 2 3??? x6
 
 ----- iou만 없이 0.671 상태 -$$$$$$$$$$$$ 학습 NOW $$$$$$$$$$$$$$$ 대기
-s6 m6
-l6_n12 scale
-l6_n8 scale
+1. s6
+2. m6
+3. l6_n12 scale
+4. l6_n8 scale
+
+5. 리더보드 1등 conf 점수로         -> n19_l6_3200_multi   ,   l6_n_18
+6. cv1등 conf 점수로                   -> l6_n8
+7. valid 1등 conf 점수로               ->   reef_yolov5l6_3400_hypn12_bat2_ep15   or m6_6   3600   or  m6_15  4000   or m6_20  3000
 
 
-next --------------
-7200 제출                       -> 2/8(화) 10시
-2400 짜리 다른 사이즈 제출       -> 2/8(화) 19시
---multi-scale                    -> 2/9(수) 10시
-다른 conf                        -> 2/9(수) 17시
-다른 iou                         -> 2/10(목) 10시
 
-다른 tracking 2개                -> 2/10(목) 17시
-                                 -> 2/11(수) 10시
-
-
-모자이크 0.7 / 0.8 / 0.9 / 0.1 / 0.2 / 0.3 / 0.4
-copy paste 0.8 / 0.9 / 0.1 / 0.2 / 0.4
-iou 0.7 / 0.8 / 0.9
-스케일 0.1 / 0.2 / 0.4 / 0.6
-
-hsv h / s / v
-degrees
-translation
-shear
-perspective
-
-flip ud
-flip lr
